@@ -97,7 +97,7 @@ const TrafficMap = () => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="" libraries={["places"]}>//place your api key here
+    <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY} libraries={["places"]}>
       <div className="traffic-map-container">
         <h2>Real-Time Traffic, ETA, and Route Optimization</h2>
         <p className="page-description">
